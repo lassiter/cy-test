@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Small project for quickly testing Cypress.io test runner",
   "scripts": {
+    "dev": "PORT=3000 node --max-old-space-size=4096  server",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
     "cypress:verify": "cypress verify",
@@ -20,5 +21,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/cypress-io/cypress-test-tiny.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "next": "8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
